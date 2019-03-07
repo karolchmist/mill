@@ -1,0 +1,8 @@
+{
+  "namespace": "mill.test.tutorial",
+  "type": "record",
+  "name": "Person",
+  "fields": [
+    { "name": "shortName", "type": "string"}
+  ]
+}

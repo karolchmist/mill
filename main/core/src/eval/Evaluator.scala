@@ -58,7 +58,6 @@ case class Evaluator(home: os.Path,
         }
 
       } else {
-
       val startTime = System.currentTimeMillis()
       // Increment the counter message by 1 to go from 1/10 to 10/10 instead of 0/10 to 9/10
       val counterMsg = (i+1) + "/" + sortedGroups.keyCount

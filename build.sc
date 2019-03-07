@@ -236,6 +236,11 @@ object scalajslib extends MillModule {
 
 
 object contrib extends MillModule {
+
+  object avrolib extends MillModule {
+    def moduleDeps = Seq(scalalib)
+  }
+
   object testng extends MillPublishModule{
     def ivyDeps = Agg(
       ivy"org.scala-sbt:test-interface:1.0",

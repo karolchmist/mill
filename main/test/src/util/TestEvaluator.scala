@@ -30,6 +30,7 @@ class TestEvaluator(module: TestUtil.BaseModule, failFast: Boolean = false)
   val evaluator = new Evaluator(Ctx.defaultHome, outPath, TestEvaluator.externalOutPath, module, logger, failFast = failFast)
 
   def apply[T](t: Task[T]): Either[Result.Failing[T], (T, Int)] = {
+
     val evaluated = evaluator.evaluate(Agg(t))
 
     if (evaluated.failing.keyCount == 0) {
